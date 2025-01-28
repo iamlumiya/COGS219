@@ -17,7 +17,6 @@ library(ggplot2)
 ## Read in data 
 
 ```{r}
-directory = "/Users/lumikang/Documents/UCSD/25/WI/219"
 file_name = "floyd_et_at.csv"
 
 df = read_csv(file_name)
@@ -204,7 +203,7 @@ combined_plot = ggplot(overall_data, aes(x = Condition, y = mean_accuracy, fill 
 combined_plot
 
 
-ggsave("/Users/lumikang/Downloads/final_plot.jpeg", plot = combined_plot, width = 4, height = 8, dpi = 300)
+ggsave("final_plot.jpeg", plot = combined_plot, width = 4, height = 8, dpi = 300)
 
 ```
 
@@ -298,7 +297,7 @@ revised_plot_dashed = revised_plot / dashed_text +
 # All done!
 revised_plot_dashed
 
-ggsave("/Users/lumikang/Downloads/new_plot.jpeg", plot = revised_plot_dashed, width = 4, height = 8, dpi = 300)
+ggsave("new_plot.jpeg", plot = revised_plot_dashed, width = 4, height = 8, dpi = 300)
 
 ```
 
